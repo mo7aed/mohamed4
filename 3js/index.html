@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  link -->
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>mohamed samir</title>
+</head>
+<body>
+  <h1 class="text-center fw-bold m-4 p-5">
+    Bookmarker
+  </h1>
+  <div class="container form-group d-flex flex-column justify-content-center align-items-center py-2">
+    <div class="sentense d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-bookmark fa-lg m-2" style="color:  #46c26b;"></i>
+      <p class="fs-3 my-1"> Bookmark your favorite sites</p>
+      <i class="fa-solid fa-bookmark fa-lg m-2" style="color: #b5ac49;"></i>
+    </div>
+    <div class="siteName d-flex flex-column justify-content-center m-auto py-3">
+      <label for="siteName"><i class="fa-solid fa-book-bookmark m-3" style="color: #000000;"></i><span class="fs-5 fw-bold">Site Name</span></label>
+      <input type="text" id="siteName" class="form-control m-3 p-2 is-valid" placeholder="Bookmark Name" required>
+    </div>
+    <div class="siteURL d-flex flex-column justify-content-center m-auto py-3">
+      <label for="siteURL" class=""><i class="fa-solid fa-link m-3" style="color: #000000;"></i><span class="fs-5 fw-bold">Site URL</span></label>
+      <input type="url" id="siteURL" name="siteURL" class="form-control m-3 p-2" placeholder="Website URL, Ex: https://www.google.com" required>
+    </div>
+    <button type="submit" class="btn btn-danger fs-5 mb-4" onclick="addSite();">Submit</button>
+    
+  </div>
+   <table class="table mt-5 text-center m-auto">
+    <thead>
+      <th class="fs-5">Index</th>
+      <th class="fs-5">Website Name</th>
+      <th class="fs-5">Visit</th>
+      <th class="fs-5">Delete</th>
+    </thead>
+    <tbody id="Data">
+ 
+    </tbody>
+   </table>
+  <script src="js/bootstrap.bundle.min.js"></script>  
+  <script src="js/main.js"></script>
+</body>
+</html>

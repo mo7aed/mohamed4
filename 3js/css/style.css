@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Alegreya', serif;
+    border-bottom: dotted grey 2px;
+    position: relative;
+    font-family: "Pacifico", cursive;
+}
+h1:hover::before{
+    height: 20%;
+}
+h1::before{
+    content:"";
+    position: absolute;
+    width:15%;
+    height:11%;
+    left:42%;
+    bottom:50px;
+    background-color: #fec260;
+    z-index: -1;
+    transition: 0.5s;
+}
+body{
+    background-color: #f7ecde;
+}
+.fInput{
+    width:33%;
+}
+.btn{
+    width: 180px;
+}
+.container{
+    border-bottom: dotted grey 2px;
+}
+.siteName,.siteURL,.table{
+    width: 90%;
+}
+.form-control{
+    border-color: rgb(60, 65, 68);
+}
+.form-control::placeholder{
+    color:rgb(81, 80, 80);
+}
+.container p{
+    font-family: "Righteous", cursive;
+    background-image: linear-gradient(to right,  #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 764px)
+{
+ *{
+    font-size: 0.6rem !important;
+ }
+ h1{
+    font-size: 1rem !important; 
+ }
+ h1::before{
+    width:15%;
+    height:11%;
+    left:42%;
+    bottom:33px;
+    background-color: #fec260;
+    z-index: -1;
+    transition: 0.5s;
+}
+}
